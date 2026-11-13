@@ -19,11 +19,11 @@ export const profile = {
     'Disfruto entender a las personas antes de dibujar una sola pantalla: qué necesitan, qué les frustra y cómo hacerles la vida más fácil. Después lo llevo a Figma, lo pruebo y lo construyo con componentes limpios, accesibles y reutilizables.',
     'Me adapto al tono de cada marca: puedo trabajar en productos sobrios y corporativos tanto como en proyectos creativos, llenos de color y personalidad. Uso herramientas de IA como Claude para acelerar mi flujo sin perder criterio propio.',
   ],
-  // TODO: completa tus datos de contacto
-  email: '', // ej. 'tucorreo@gmail.com'
+  // Datos de contacto
+  email: 'marianarestrepobarrientos@gmail.com',
   links: {
     github: 'https://github.com/Mariana-Restrepo',
-    linkedin: '', // ej. 'https://www.linkedin.com/in/tu-usuario'
+    linkedin: 'https://www.linkedin.com/in/mariana-restrepo-barrientos-176077324/',
     behance: '', // opcional: Behance o Dribbble
   },
   cv: '', // ej. '/cv-mariana-restrepo.pdf' (pon el PDF dentro de /public)
