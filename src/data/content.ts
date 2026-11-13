@@ -16,7 +16,7 @@ export const profile = {
     'Diseño en Figma e implemento en React y TypeScript, con foco en sistemas de diseño y accesibilidad WCAG.',
   about: [
     'Soy Mariana, diseñadora UX/UI y desarrolladora frontend de Medellín. Estudio Tecnología en Desarrollo de Software en la Universidad Católica Luis Amigó y en abril de 2027 empiezo el Máster en Diseño Web y Apps (UX/UI) de ESDESIGN y la Universidad Internacional de Valencia.',
-    'En mis prácticas en Crystal S.A.S. creo y mantengo la librería de diseño de la empresa, con 173 componentes usados en 12 aplicativos. También he rediseñado 6 aplicativos web internos e implemento sus vistas en React y TypeScript junto a los equipos de diseño y desarrollo.',
+    'Actualmente hago mis prácticas como Desarrolladora Frontend en Crystal S.A.S. En mis proyectos propios diseño y construyo de punta a punta: desde la investigación y el prototipo en Figma hasta componentes en React y TypeScript.',
     'Me importa que lo que diseño funcione para todas las personas: trabajo con WCAG 2.2 AA, navegación por teclado y lector de pantalla. Me adapto al tono de cada marca, sea sobria y corporativa o creativa y llena de color, y uso IA como Claude para acelerar mi flujo sin perder criterio propio.',
   ],
   email: 'marianarestrepobarrientos@gmail.com',
@@ -25,14 +25,14 @@ export const profile = {
     linkedin: 'https://www.linkedin.com/in/mariana-restrepo-barrientos-176077324/',
     behance: '', // opcional: Behance o Dribbble
   },
-  cv: 'Hoja_de_vida_Mariana_Restrepo_Barrientos.pdf', // archivo dentro de /public
+  cv: '', // pon aquí el nombre del PDF dentro de /public (sin datos de proyectos de la empresa)
 }
 
 /** Cifras destacadas que se muestran bajo el inicio. */
 export const stats = [
-  { value: '173', label: 'componentes en la librería de diseño que mantengo' },
-  { value: '12', label: 'aplicativos usan ese sistema de diseño' },
-  { value: '6', label: 'aplicativos web internos rediseñados' },
+  { value: '39', label: 'pantallas prototipadas en Gestor Ventures' },
+  { value: '50', label: 'combinaciones de color verificadas con WCAG AA' },
+  { value: '10 M', label: 'registros procesados en el navegador (GestorClientes)' },
   { value: '100', label: 'en accesibilidad en Lighthouse (Soy Mariana)' },
 ]
 
@@ -42,11 +42,8 @@ export const experience = [
     company: 'Crystal S.A.S.',
     place: 'Medellín',
     period: 'Ene. 2026 – ene. 2027',
-    points: [
-      'Creo y mantengo la librería de diseño de la empresa: 173 componentes, estilos y guías visuales usados en 12 aplicativos.',
-      'Rediseñé 6 aplicativos web internos: mejoré flujos y navegación, ordené pantallas y eliminé información redundante.',
-      'Implemento vistas responsive (hasta 15 por aplicativo) con fidelidad visual en React y TypeScript.',
-    ],
+    // Por decisión propia no se describen proyectos ni cifras de la empresa.
+    points: [] as string[],
   },
 ]
 

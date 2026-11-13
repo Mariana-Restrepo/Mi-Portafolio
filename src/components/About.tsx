@@ -19,9 +19,11 @@ export function About() {
             <div key={e.company} className="timeline-item">
               <p className="timeline-item__meta">{e.period} · {e.place}</p>
               <h4>{e.role} <span>· {e.company}</span></h4>
-              <ul>
-                {e.points.map((p) => <li key={p}>{p}</li>)}
-              </ul>
+              {e.points.length > 0 && (
+                <ul>
+                  {e.points.map((p) => <li key={p}>{p}</li>)}
+                </ul>
+              )}
             </div>
           ))}
 
