@@ -46,6 +46,20 @@ function Cover({ project }: { project: Project }) {
           <span className="cover__card-p">P</span>
         </div>
       )}
+      {c.variant === 5 && (
+        <div className="cover__duo">
+          <span className="duo duo--minimal">
+            <small>Minimal</small>
+            <b>Continuar</b>
+            <i />
+          </span>
+          <span className="duo duo--creativo">
+            <small>Creativo</small>
+            <b>Continuar</b>
+            <i />
+          </span>
+        </div>
+      )}
       {c.variant === 2 && (
         <svg className="cover__chart" viewBox="0 0 200 100" preserveAspectRatio="none">
           <path className="line-n" d="M0 100 L200 4" />

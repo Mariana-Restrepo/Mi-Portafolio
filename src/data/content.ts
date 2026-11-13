@@ -32,7 +32,7 @@ export const profile = {
 export const stats = [
   { value: '39', label: 'pantallas prototipadas en Gestor Ventures' },
   { value: '50', label: 'combinaciones de color verificadas con WCAG AA' },
-  { value: '8', label: 'componentes accesibles en mi sistema de diseño (mariana-ui)' },
+  { value: '4', label: 'combinaciones de estilo en mi sistema de diseño (mariana-ui)' },
   { value: '100', label: 'en accesibilidad en Lighthouse (Soy Mariana)' },
 ]
 
@@ -93,6 +93,26 @@ export const projects: Project[] = [
       logo: 'proyectos/gestor-ventures-logo.svg',
     },
     featured: true,
+  },
+  {
+    slug: 'mariana-ui',
+    title: 'mariana-ui',
+    kind: 'Sistema de diseño · Diseño y frontend',
+    year: '2026',
+    summary:
+      'Mi sistema de diseño para apps web y móviles: dos estilos, Minimal y Creativo, que comparten la misma base y funcionan en claro y oscuro.',
+    role: 'Proyecto individual: arquitectura de tokens, dirección visual de los dos estilos y documentación con marca propia.',
+    highlights: [
+      'Tokens en 3 capas: primitivos, forma por estilo y color por estilo × tema',
+      'Documentación en Storybook con 4 pieles propias (Editorial y Neón)',
+      'Vistas de móvil, tablet y escritorio, y publicación automática',
+    ],
+    tags: ['Design tokens', 'Design system', 'Storybook', 'React', 'TypeScript', 'UX/UI'],
+    links: [
+      { label: 'Ver documentación', href: 'https://mariana-restrepo.github.io/mariana-ui/' },
+      { label: 'Ver código', href: 'https://github.com/Mariana-Restrepo/mariana-ui' },
+    ],
+    cover: { type: 'pattern', label: 'mariana-ui', variant: 5 },
   },
   {
     slug: 'soy-mariana',

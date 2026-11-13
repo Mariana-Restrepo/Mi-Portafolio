@@ -1408,3 +1408,67 @@ em {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ════════════════════════════════════════════════════════════
+   Portada de mariana-ui (5): el mismo componente en dos estilos
+   ════════════════════════════════════════════════════════════ */
+
+.cover__duo {
+  position: absolute;
+  inset: 28px 28px 76px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.duo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  transition: transform 0.6s var(--ease);
+}
+.duo small {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.duo b {
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 650;
+}
+.duo i {
+  display: block;
+  width: 80%;
+  height: 8px;
+  border-radius: 999px;
+}
+.duo--minimal {
+  background: #ffffff;
+  color: #17141f;
+  border: 1px solid #e1dee9;
+  border-radius: 10px;
+}
+.duo--minimal small { color: #5b5570; }
+.duo--minimal b { background: #17141f; color: #ffffff; border-radius: 8px; }
+.duo--minimal i { background: #efedf4; border-radius: 4px; }
+.duo--creativo {
+  background: #fff7f0;
+  color: #1b1033;
+  border: 2px solid #1b1033;
+  border-radius: 20px;
+  box-shadow: 5px 5px 0 #1b1033;
+}
+.duo--creativo small { color: #c8174f; font-weight: 650; }
+.duo--creativo b {
+  background: #c8174f;
+  color: #ffffff;
+  border: 2px solid #1b1033;
+  border-radius: 999px;
+  box-shadow: 3px 3px 0 #1b1033;
+}
+.duo--creativo i { background: #ffc94d; }
+.project:hover .duo--minimal { transform: translateY(-4px); }
+.project:hover .duo--creativo { transform: translateY(-4px) rotate(-2deg); }
