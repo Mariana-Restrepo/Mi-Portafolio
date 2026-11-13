@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// Si publicas en el repo "Mariana-Restrepo.github.io", la base es "/".
-// Si lo publicas en otro repo (ej. "portafolio"), cambia base a "/portafolio/".
+// El sitio se publica en https://mariana-restrepo.github.io/Mi-Portafolio/
+// Si cambias el nombre del repo, cambia también "base".
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/Mi-Portafolio/',
 })

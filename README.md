@@ -2,7 +2,7 @@
 
 Portafolio personal de **Mariana Restrepo Barrientos**, desarrolladora frontend y diseñadora UX/UI en Medellín.
 
-**Sitio en vivo:** https://mariana-restrepo.github.io
+**Sitio en vivo:** https://mariana-restrepo.github.io/Mi-Portafolio/
 
 ## La idea
 
