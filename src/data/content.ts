@@ -7,27 +7,53 @@ export const profile = {
   name: 'Mariana Restrepo Barrientos',
   firstName: 'Mariana',
   lastName: 'Restrepo',
-  role: 'Desarrolladora Frontend & Diseñadora UX/UI',
+  role: 'Diseñadora UX/UI & Desarrolladora Frontend',
   location: 'Medellín, Colombia',
-  available: true, // muestra el indicador "Disponible para nuevos proyectos"
+  availability: 'Disponible desde enero de 2027', // deja '' para ocultar el indicador
   tagline:
     'Diseño interfaces que se sienten bien y las construyo para que funcionen igual de bien.',
   intro:
-    'Uno el diseño de producto y el desarrollo frontend: investigo, prototipo en Figma y llevo cada pantalla a código con React y TypeScript, cuidando el detalle de punta a punta.',
+    'Diseño en Figma e implemento en React y TypeScript, con foco en sistemas de diseño y accesibilidad WCAG.',
   about: [
-    'Soy Mariana, diseñadora UX/UI y desarrolladora frontend de Medellín. Me formo en la Universidad Católica Luis Amigó y me apasiona el punto exacto donde una buena idea de diseño se convierte en un producto real.',
-    'Disfruto entender a las personas antes de dibujar una sola pantalla: qué necesitan, qué les frustra y cómo hacerles la vida más fácil. Después lo llevo a Figma, lo pruebo y lo construyo con componentes limpios, accesibles y reutilizables.',
-    'Me adapto al tono de cada marca: puedo trabajar en productos sobrios y corporativos tanto como en proyectos creativos, llenos de color y personalidad. Uso herramientas de IA como Claude para acelerar mi flujo sin perder criterio propio.',
+    'Soy Mariana, diseñadora UX/UI y desarrolladora frontend de Medellín. Estudio Tecnología en Desarrollo de Software en la Universidad Católica Luis Amigó y en abril de 2027 empiezo el Máster en Diseño Web y Apps (UX/UI) de ESDESIGN y la Universidad Internacional de Valencia.',
+    'En mis prácticas en Crystal S.A.S. creo y mantengo la librería de diseño de la empresa, con 173 componentes usados en 12 aplicativos. También he rediseñado 6 aplicativos web internos e implemento sus vistas en React y TypeScript junto a los equipos de diseño y desarrollo.',
+    'Me importa que lo que diseño funcione para todas las personas: trabajo con WCAG 2.2 AA, navegación por teclado y lector de pantalla. Me adapto al tono de cada marca, sea sobria y corporativa o creativa y llena de color, y uso IA como Claude para acelerar mi flujo sin perder criterio propio.',
   ],
-  // Datos de contacto
   email: 'marianarestrepobarrientos@gmail.com',
   links: {
     github: 'https://github.com/Mariana-Restrepo',
     linkedin: 'https://www.linkedin.com/in/mariana-restrepo-barrientos-176077324/',
     behance: '', // opcional: Behance o Dribbble
   },
-  cv: '', // ej. '/cv-mariana-restrepo.pdf' (pon el PDF dentro de /public)
+  cv: 'Hoja_de_vida_Mariana_Restrepo_Barrientos.pdf', // archivo dentro de /public
 }
+
+/** Cifras destacadas que se muestran bajo el inicio. */
+export const stats = [
+  { value: '173', label: 'componentes en la librería de diseño que mantengo' },
+  { value: '12', label: 'aplicativos usan ese sistema de diseño' },
+  { value: '6', label: 'aplicativos web internos rediseñados' },
+  { value: '100', label: 'en accesibilidad en Lighthouse (Soy Mariana)' },
+]
+
+export const experience = [
+  {
+    role: 'Desarrolladora Frontend (prácticas)',
+    company: 'Crystal S.A.S.',
+    place: 'Medellín',
+    period: 'Ene. 2026 – ene. 2027',
+    points: [
+      'Creo y mantengo la librería de diseño de la empresa: 173 componentes, estilos y guías visuales usados en 12 aplicativos.',
+      'Rediseñé 6 aplicativos web internos: mejoré flujos y navegación, ordené pantallas y eliminé información redundante.',
+      'Implemento vistas responsive (hasta 15 por aplicativo) con fidelidad visual en React y TypeScript.',
+    ],
+  },
+]
+
+export const education = [
+  { title: 'Máster en Diseño Web y Apps (UX/UI)', place: 'ESDESIGN · Universidad Internacional de Valencia (online)', period: 'Desde abr. 2027' },
+  { title: 'Tecnología en Desarrollo de Software', place: 'Universidad Católica Luis Amigó', period: '2023 – feb. 2027' },
+]
 
 export type Project = {
   slug: string
@@ -47,18 +73,18 @@ export const projects: Project[] = [
   {
     slug: 'gestor-ventures',
     title: 'Gestor Ventures',
-    kind: 'App móvil · UX/UI',
+    kind: 'App móvil · UX/UI · En equipo',
     year: '2026',
     summary:
-      'App Android de gestión para emprendedores: ventas, gastos, caja, agenda, clientes y un asistente de IA que responde con los datos del propio negocio.',
-    role: 'Diseño UX/UI: investigación, arquitectura de información, identidad visual, flujos y prototipo navegable. Trabajo en equipo con Miguel Ángel Blandón (desarrollo).',
+      'App de gestión para emprendedores que centraliza ventas, gastos, agenda, clientes y caja, con un asistente de IA que responde con los datos del propio negocio.',
+    role: 'Diseño de la experiencia completa, sistema visual y prototipo. Trabajo en equipo con Miguel Ángel Blandón (desarrollo), en Diseño Móvil II.',
     highlights: [
-      'Identidad de marca y logo desde cero',
-      'Prototipo navegable con 6 fases y recorrido completo',
-      'Dos roles (Líder y Vendedor) con navegación adaptada',
+      'Prototipo de 39 pantallas que cubre las 39 historias de usuario',
+      'Sistema visual con modo claro y oscuro, e identidad de marca',
+      '50 combinaciones de color verificadas con contraste WCAG AA',
       'Presentado en la Muestra de Proyectos Tecnológicos 2026',
     ],
-    tags: ['UX Research', 'Figma', 'Prototipado', 'Design System', 'Android'],
+    tags: ['UX Research', 'Figma', 'Prototipado', 'Design System', 'WCAG', 'Android'],
     links: [
       { label: 'Ver prototipo', href: 'https://mariana-restrepo.github.io/Diseno-Movil-II/' },
       { label: 'Repo de diseño', href: 'https://github.com/Mariana-Restrepo/Diseno-Movil-II' },
@@ -74,19 +100,49 @@ export const projects: Project[] = [
   {
     slug: 'soy-mariana',
     title: 'Soy Mariana',
-    kind: 'Web + App móvil · Frontend',
+    kind: 'Web + App móvil · Diseño y frontend',
     year: '2026',
     summary:
-      'Experiencia digital para una creadora de contenido: una web instalable como PWA y una app móvil que comparten contenido, sistema de diseño y lógica en un monorepo.',
-    role: 'Diseño y desarrollo completo: arquitectura del monorepo, tokens de diseño compartidos, web y app.',
+      'Web instalable como PWA y app móvil de marca personal que comparten contenido, sistema de diseño y lógica en un monorepo.',
+    role: 'Concepto, sistema de diseño y desarrollo con React y TypeScript a partir de especificaciones para IA, revisando y depurando el código generado.',
     highlights: [
-      'Monorepo con npm workspaces (tokens · content · core)',
+      '100/100 en accesibilidad en Lighthouse',
       'Un solo sistema de diseño para web y móvil',
-      'Animaciones con Motion y soporte PWA',
+      'Sin datos fijos en el código: contenido en JSON con esquemas',
     ],
-    tags: ['React 19', 'TypeScript', 'Vite', 'Tailwind v4', 'Expo', 'React Native'],
+    tags: ['React 19', 'TypeScript', 'Vite', 'Tailwind v4', 'Expo', 'Accesibilidad'],
     links: [{ label: 'Ver código', href: 'https://github.com/Mariana-Restrepo/SoyMariana' }],
     cover: { type: 'pattern', label: 'Soy Mariana', variant: 1 },
+  },
+  {
+    slug: 'mapau',
+    title: 'MapaU',
+    kind: 'Guía inclusiva · UX Research',
+    year: '2025 – hoy',
+    summary:
+      'Guía inclusiva del campus de la Universidad Católica Luis Amigó, pensada para que cualquier persona pueda orientarse, incluidas personas con discapacidad visual.',
+    role: 'Proyecto individual: investigación con estudiantes, docentes y personal, y diseño del sistema de orientación.',
+    highlights: [
+      'Investigación de cómo se orientan las personas en el campus',
+      'Sistema de orientación por voz y audio',
+      'Accesible para personas con discapacidad visual',
+    ],
+    tags: ['Investigación', 'Accesibilidad', 'Diseño inclusivo', 'Voz y audio'],
+    links: [],
+    cover: { type: 'pattern', label: 'MapaU', variant: 3 },
+  },
+  {
+    slug: 'parking-amigo',
+    title: 'Parking Amigó',
+    kind: 'App móvil · UX/UI · En equipo',
+    year: '2024 – hoy',
+    summary:
+      'App del parqueadero universitario para recargar el carné y controlar el acceso de vehículos.',
+    role: 'Diseño de la app en Figma con Material Design y participación en el desarrollo en Android Studio.',
+    highlights: ['Recarga del carné desde el celular', 'Control de acceso al parqueadero', 'Basada en Material Design'],
+    tags: ['Figma', 'Material Design', 'Android Studio'],
+    links: [],
+    cover: { type: 'pattern', label: 'Parking Amigó', variant: 4 },
   },
   {
     slug: 'gestor-clientes',
@@ -94,14 +150,14 @@ export const projects: Project[] = [
     kind: 'Web app · Visualización',
     year: '2026',
     summary:
-      'Gestión de clientes que compara en vivo la búsqueda secuencial O(n) con la binaria O(log n), midiendo pasos y tiempo real con bases de hasta 10 millones de registros.',
+      'Compara en vivo la búsqueda secuencial O(n) con la binaria O(log n), midiendo pasos y tiempo real con bases de hasta 10 millones de registros.',
     role: 'Diseño y desarrollo. Proyecto de Cálculo Diferencial: límites aplicados al rendimiento de algoritmos.',
     highlights: [
       'Comparación visual de algoritmos en tiempo real',
       'Hasta 10.000.000 de registros en el navegador',
-      'Cero instalación: un solo archivo, listo para usar',
+      'Cero instalación: un solo archivo',
     ],
-    tags: ['JavaScript', 'HTML', 'CSS', 'Algoritmos', 'Data viz'],
+    tags: ['JavaScript', 'HTML', 'CSS', 'Algoritmos'],
     links: [
       { label: 'Ver demo', href: 'https://mariana-restrepo.github.io/Aplicativo_busqueda/' },
       { label: 'Ver código', href: 'https://github.com/Mariana-Restrepo/Aplicativo_busqueda' },
@@ -114,23 +170,28 @@ export const skills = [
   {
     title: 'Diseño UX/UI',
     icon: 'pen',
-    items: ['Figma', 'Investigación de usuarios', 'Arquitectura de información', 'Wireframes y prototipos', 'Sistemas de diseño', 'Accesibilidad'],
+    items: ['Figma', 'Sistemas de diseño', 'Prototipos navegables', 'Material Design', 'Interfaces web y móviles', 'Historias de usuario', 'Pruebas de usabilidad'],
   },
   {
     title: 'Desarrollo Frontend',
     icon: 'code',
-    items: ['React', 'TypeScript', 'JavaScript', 'HTML semántico', 'CSS / Tailwind', 'Vite', 'React Native · Expo'],
+    items: ['React', 'TypeScript', 'HTML semántico', 'CSS', 'Diseño responsive', 'Vite', 'React Native · Expo'],
   },
   {
-    title: 'Flujo de trabajo',
+    title: 'Accesibilidad',
+    icon: 'eye',
+    items: ['WCAG 2.2 AA', 'Contraste de color', 'Lighthouse', 'Navegación por teclado', 'Lector de pantalla'],
+  },
+  {
+    title: 'Forma de trabajo',
     icon: 'spark',
-    items: ['Git y GitHub', 'IA aplicada (Claude)', 'Metodologías ágiles', 'Trabajo en equipo', 'Documentación'],
+    items: ['Scrum', 'Desarrollo asistido por IA', 'Puente entre diseño y desarrollo', 'Git y GitHub'],
   },
 ]
 
 export const workflow = [
-  { n: '01', title: 'Entender', text: 'Hablo con las personas, investigo el problema y defino qué significa “éxito”.' },
-  { n: '02', title: 'Diseñar', text: 'Flujos, wireframes y una interfaz con identidad, consistente con un sistema de diseño.' },
-  { n: '03', title: 'Prototipar', text: 'Prototipos navegables para probar ideas rápido, antes de escribir código.' },
-  { n: '04', title: 'Construir', text: 'Componentes en React y TypeScript, accesibles, responsivos y fieles al diseño.' },
+  { n: '01', title: 'Entender', text: 'Entrevistas, historias de usuario y flujos para definir qué necesita la gente de verdad.' },
+  { n: '02', title: 'Diseñar', text: 'Interfaces en Figma con identidad, consistentes con un sistema de diseño y accesibles.' },
+  { n: '03', title: 'Prototipar', text: 'Prototipos navegables para probar ideas con usuarios antes de escribir código.' },
+  { n: '04', title: 'Construir', text: 'Componentes en React y TypeScript, responsivos y fieles al diseño, verificados con Lighthouse.' },
 ]

@@ -29,7 +29,13 @@ export const Code = ({ size }: P) => (
 export const Spark = ({ size }: P) => (
   <svg {...base(size)}><path d="M12 3l1.9 5.6L19.5 10.5 13.9 12.4 12 18l-1.9-5.6L4.5 10.5l5.6-1.9z" /><path d="M19 3v4M17 5h4" /></svg>
 )
-export const Mail = ({ size }: P) => (
+export const Eye = ({ size }: P) => (
+  <svg {...base(size)}><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" /><circle cx="12" cy="12" r="3" /></svg>
+)
+export const Download = ({ size }: P) => (
+  <svg {...base(size)}><path d="M12 3v12M7 10l5 5 5-5M5 21h14" /></svg>
+)
+export const Mail =({ size }: P) => (
   <svg {...base(size)}><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
 )
 export const GitHub = ({ size = 20 }: P) => (

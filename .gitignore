@@ -6,3 +6,4 @@ dist
 # Notas personales (no se suben)
 guia-github/
 *.tsbuildinfo
+.claude/

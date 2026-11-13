@@ -1,7 +1,7 @@
-import { profile, skills } from '../data/content'
-import { Code, Pen, Spark } from './Icons'
+import { education, experience, profile, skills } from '../data/content'
+import { Code, Eye, Pen, Spark } from './Icons'
 
-const icons = { pen: Pen, code: Code, spark: Spark } as const
+const icons = { pen: Pen, code: Code, eye: Eye, spark: Spark } as const
 
 export function About() {
   return (
@@ -13,6 +13,26 @@ export function About() {
             Diseñadora que <em>programa</em>, desarrolladora que <em>diseña</em>
           </h2>
           {profile.about.map((p, i) => <p key={i}>{p}</p>)}
+
+          <h3 className="about__subtitle">Experiencia</h3>
+          {experience.map((e) => (
+            <div key={e.company} className="timeline-item">
+              <p className="timeline-item__meta">{e.period} · {e.place}</p>
+              <h4>{e.role} <span>· {e.company}</span></h4>
+              <ul>
+                {e.points.map((p) => <li key={p}>{p}</li>)}
+              </ul>
+            </div>
+          ))}
+
+          <h3 className="about__subtitle">Educación</h3>
+          {education.map((e) => (
+            <div key={e.title} className="timeline-item">
+              <p className="timeline-item__meta">{e.period}</p>
+              <h4>{e.title}</h4>
+              <p className="timeline-item__place">{e.place}</p>
+            </div>
+          ))}
         </div>
         <div className="skills">
           {skills.map((s) => {

@@ -1,5 +1,6 @@
-import { profile } from '../data/content'
+import { profile, stats } from '../data/content'
 import type { Mood } from '../hooks/usePrefs'
+import { Download } from './Icons'
 import { MoodSwitch } from './MoodSwitch'
 
 type Props = { mood: Mood; onMood: (m: Mood) => void }
@@ -15,9 +16,9 @@ export function Hero({ mood, onMood }: Props) {
       </div>
       <div className="container hero__grid">
         <div className="hero__copy">
-          {profile.available && (
+          {profile.availability && (
             <p className="status">
-              <span className="status__dot" /> Disponible para nuevos proyectos · {profile.location}
+              <span className="status__dot" /> {profile.availability} · {profile.location}
             </p>
           )}
           <h1 className="hero__title">
@@ -29,7 +30,13 @@ export function Hero({ mood, onMood }: Props) {
           <p className="hero__intro">{profile.intro}</p>
           <div className="hero__ctas">
             <a href="#proyectos" className="btn btn--primary">Ver proyectos</a>
-            <a href="#contacto" className="btn btn--ghost">Hablemos</a>
+            {profile.cv ? (
+              <a href={`${import.meta.env.BASE_URL}${profile.cv}`} className="btn btn--ghost" download>
+                Hoja de vida <Download size={18} />
+              </a>
+            ) : (
+              <a href="#contacto" className="btn btn--ghost">Hablemos</a>
+            )}
           </div>
         </div>
 
@@ -64,6 +71,16 @@ export function Hero({ mood, onMood }: Props) {
             <MoodSwitch mood={mood} onChange={onMood} />
           </div>
         </aside>
+      </div>
+      <div className="container">
+        <dl className="stats">
+          {stats.map((s) => (
+            <div key={s.label} className="stat">
+              <dt>{s.label}</dt>
+              <dd>{s.value}</dd>
+            </div>
+          ))}
+        </dl>
       </div>
     </section>
   )

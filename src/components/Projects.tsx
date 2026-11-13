@@ -32,6 +32,20 @@ function Cover({ project }: { project: Project }) {
           <span className="dev dev--phone"><i /><i /></span>
         </div>
       )}
+      {c.variant === 3 && (
+        <div className="cover__rings">
+          <span /><span /><span />
+          <svg className="cover__pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" /><circle cx="12" cy="10" r="2.5" /></svg>
+        </div>
+      )}
+      {c.variant === 4 && (
+        <div className="cover__card">
+          <span className="cover__card-chip" />
+          <span className="cover__card-line" />
+          <span className="cover__card-line cover__card-line--short" />
+          <span className="cover__card-p">P</span>
+        </div>
+      )}
       {c.variant === 2 && (
         <svg className="cover__chart" viewBox="0 0 200 100" preserveAspectRatio="none">
           <path className="line-n" d="M0 100 L200 4" />
@@ -69,13 +83,15 @@ export function Projects() {
                 <ul className="tags" aria-label="Tecnologías y herramientas">
                   {p.tags.map((t) => <li key={t}>{t}</li>)}
                 </ul>
-                <div className="project__links">
-                  {p.links.map((l) => (
-                    <a key={l.href} href={l.href} target="_blank" rel="noreferrer" className="link-arrow">
-                      {l.label} <Arrow size={16} />
-                    </a>
-                  ))}
-                </div>
+                {p.links.length > 0 && (
+                  <div className="project__links">
+                    {p.links.map((l) => (
+                      <a key={l.href} href={l.href} target="_blank" rel="noreferrer" className="link-arrow">
+                        {l.label} <Arrow size={16} />
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
             </article>
           ))}

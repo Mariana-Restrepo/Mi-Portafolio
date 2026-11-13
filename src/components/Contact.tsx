@@ -1,5 +1,5 @@
 import { profile } from '../data/content'
-import { Arrow, GitHub, LinkedIn, Mail } from './Icons'
+import { Arrow, Download, GitHub, LinkedIn, Mail } from './Icons'
 
 export function Contact() {
   const { email, links, cv } = profile
@@ -17,7 +17,9 @@ export function Contact() {
             <a href={`mailto:${email}`} className="btn btn--primary"><Mail size={18} /> {email}</a>
           )}
           {cv && (
-            <a href={cv} className="btn btn--ghost" download>Descargar hoja de vida <Arrow size={16} /></a>
+            <a href={`${import.meta.env.BASE_URL}${cv}`} className="btn btn--ghost" download>
+              Descargar hoja de vida <Download size={18} />
+            </a>
           )}
         </div>
         <ul className="socials">
