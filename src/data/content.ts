@@ -32,7 +32,7 @@ export const profile = {
 export const stats = [
   { value: '39', label: 'pantallas prototipadas en Gestor Ventures' },
   { value: '50', label: 'combinaciones de color verificadas con WCAG AA' },
-  { value: '10 M', label: 'registros procesados en el navegador (GestorClientes)' },
+  { value: '8', label: 'componentes accesibles en mi sistema de diseño (mariana-ui)' },
   { value: '100', label: 'en accesibilidad en Lighthouse (Soy Mariana)' },
 ]
 
@@ -140,26 +140,6 @@ export const projects: Project[] = [
     tags: ['Figma', 'Material Design', 'Android Studio'],
     links: [],
     cover: { type: 'pattern', label: 'Parking Amigó', variant: 4 },
-  },
-  {
-    slug: 'gestor-clientes',
-    title: 'GestorClientes',
-    kind: 'Web app · Visualización',
-    year: '2026',
-    summary:
-      'Compara en vivo la búsqueda secuencial O(n) con la binaria O(log n), midiendo pasos y tiempo real con bases de hasta 10 millones de registros.',
-    role: 'Diseño y desarrollo. Proyecto de Cálculo Diferencial: límites aplicados al rendimiento de algoritmos.',
-    highlights: [
-      'Comparación visual de algoritmos en tiempo real',
-      'Hasta 10.000.000 de registros en el navegador',
-      'Cero instalación: un solo archivo',
-    ],
-    tags: ['JavaScript', 'HTML', 'CSS', 'Algoritmos'],
-    links: [
-      { label: 'Ver demo', href: 'https://mariana-restrepo.github.io/Aplicativo_busqueda/' },
-      { label: 'Ver código', href: 'https://github.com/Mariana-Restrepo/Aplicativo_busqueda' },
-    ],
-    cover: { type: 'pattern', label: 'O(log n)', variant: 2 },
   },
 ]
 
