@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mariana Restrepo · Frontend & UX/UI</title>
+    <meta name="description" content="Portafolio de Mariana Restrepo Barrientos, desarrolladora frontend y diseñadora UX/UI en Medellín. React, TypeScript y Figma." />
+    <meta property="og:title" content="Mariana Restrepo · Frontend & UX/UI" />
+    <meta property="og:description" content="Diseño interfaces y las construyo con React y TypeScript." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      // Aplica tema y estilo antes de pintar para evitar parpadeo
+      (function () {
+        var d = document.documentElement, t, m;
+        try { t = localStorage.getItem('theme'); m = localStorage.getItem('mood'); } catch (e) {}
+        d.dataset.theme = t || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        d.dataset.mood = m || 'elegante';
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

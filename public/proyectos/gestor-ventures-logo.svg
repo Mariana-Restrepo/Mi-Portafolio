@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512">
+  <title>Gestor Ventures - ícono</title>
+  <rect width="100" height="100" rx="22" fill="#1B2A4A"/>
+  <g transform="translate(12.2 18.7) scale(.72)">
+    <rect x="14" y="60" width="16" height="24" rx="4" fill="#fff" fill-opacity=".55"/>
+    <rect x="38" y="46" width="16" height="38" rx="4" fill="#fff" fill-opacity=".8"/>
+    <rect x="62" y="34" width="16" height="50" rx="4" fill="#2FA37A"/>
+    <circle cx="78" cy="16" r="13" fill="#E4A93A"/>
+    <path d="M78 9V23M82 12.5C81 10.5 75 10.5 74.5 14C74 18 82 17 81.5 21C81 24.5 75 24 74 21.5" fill="none" stroke="#1B2A4A" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+</svg>
